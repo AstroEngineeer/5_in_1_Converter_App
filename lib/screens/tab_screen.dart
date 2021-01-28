@@ -1,3 +1,4 @@
+import 'package:Math_Electrical_Calculator/screens/electrical_calculator.dart';
 import 'package:Math_Electrical_Calculator/screens/logarithmic_calculator.dart';
 import 'package:Math_Electrical_Calculator/screens/trigonometry_calculator.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,7 @@ class TabScreen extends StatefulWidget {
 class _TabScreenState extends State<TabScreen> {
   var screens = [
     {"title": "Logarithmic Calculator", "screen": LogarithmicCalculator()},
-    {"title": "Electrical Calculator", "screen": LogarithmicCalculator()},
+    {"title": "Electrical Calculator", "screen": ElectricalCalculator()},
     {"title": "Trigonometry Calculator", "screen": TrigonometryCalculator()},
     {"title": "Number System Calculator", "screen": LogarithmicCalculator()},
     {"title": "Matrix Calculator", "screen": LogarithmicCalculator()},
