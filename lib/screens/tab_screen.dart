@@ -1,5 +1,6 @@
 import 'package:Math_Electrical_Calculator/screens/electrical_calculator.dart';
 import 'package:Math_Electrical_Calculator/screens/logarithmic_calculator.dart';
+import 'package:Math_Electrical_Calculator/screens/number_system_calculator.dart';
 import 'package:Math_Electrical_Calculator/screens/trigonometry_calculator.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class _TabScreenState extends State<TabScreen> {
     {"title": "Logarithmic Calculator", "screen": LogarithmicCalculator()},
     {"title": "Electrical Calculator", "screen": ElectricalCalculator()},
     {"title": "Trigonometry Calculator", "screen": TrigonometryCalculator()},
-    {"title": "Number System Calculator", "screen": LogarithmicCalculator()},
+    {"title": "Number System Calculator", "screen": NumberSystemCalculator()},
     {"title": "Matrix Calculator", "screen": LogarithmicCalculator()},
   ];
 
