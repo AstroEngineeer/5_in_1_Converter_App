@@ -76,13 +76,6 @@ class _TrigonometryCalculatorState extends State<TrigonometryCalculator> {
           onPressed: calculate,
           child: Text("Calculate"),
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Divider(
-            height: 2,
-            thickness: 5,
-          ),
-        ),
         CustomGridView(map),
       ],
     );

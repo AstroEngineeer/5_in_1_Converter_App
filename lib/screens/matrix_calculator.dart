@@ -198,7 +198,7 @@ class _MatrixCalculatorState extends State<MatrixCalculator> {
             x += int.parse(matrix[i][k]) * int.parse(matrix[k][j]);
             result1[i][j] = x;
           }
-      dialog1("Multiplication");
+      dialog1("Power A");
     } else {
       showDialog(
           context: context,
@@ -221,7 +221,7 @@ class _MatrixCalculatorState extends State<MatrixCalculator> {
             x += int.parse(matrix1[i][k]) * int.parse(matrix1[k][j]);
             result1[i][j] = x;
           }
-      dialog1("Multiplication");
+      dialog1("Power B");
     } else {
       showDialog(
           context: context,
@@ -245,7 +245,7 @@ class _MatrixCalculatorState extends State<MatrixCalculator> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: e
                             .map((e) => e == "0"
-                                ? Text(" ")
+                                ? Text("0")
                                 : Text(
                                     e,
                                     style: TextStyle(
@@ -273,7 +273,7 @@ class _MatrixCalculatorState extends State<MatrixCalculator> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: e
                             .map((e) => e == 0
-                                ? Text(" ")
+                                ? Text("0")
                                 : Text(
                                     e.toString(),
                                     style: TextStyle(
@@ -335,7 +335,7 @@ class _MatrixCalculatorState extends State<MatrixCalculator> {
               color: Colors.teal,
             ),
             RaisedButton(
-              onPressed: powerB,
+              onPressed: powerA,
               child: Text("Power"),
               color: Colors.teal,
             ),
