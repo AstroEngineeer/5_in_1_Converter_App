@@ -454,7 +454,7 @@ class _MatrixCalculatorState extends State<MatrixCalculator> {
             ),
             RaisedButton(
               onPressed: multiplication,
-              child: Text("Multi"),
+              child: Text("Multiply"),
             ),
           ],
         ),
