@@ -131,10 +131,12 @@ class _MatrixCalculatorState extends State<MatrixCalculator> {
     } else {
       showDialog(
           context: context,
-          child: AlertDialog(
-            title: Text("Row Column Miss-Match"),
-            content: Text("Check if rows and columns are equal"),
-          ));
+          builder: (context) {
+            return AlertDialog(
+              title: Text("Row Column Miss-Match"),
+              content: Text("Check if rows and columns are equal"),
+            );
+          });
     }
   }
 
@@ -153,10 +155,12 @@ class _MatrixCalculatorState extends State<MatrixCalculator> {
     } else {
       showDialog(
           context: context,
-          child: AlertDialog(
-            title: Text("Row Column Miss-Match"),
-            content: Text("Check if rows and columns are equal"),
-          ));
+          builder: (context) {
+            return AlertDialog(
+              title: Text("Row Column Miss-Match"),
+              content: Text("Check if rows and columns are equal"),
+            );
+          });
     }
   }
 
@@ -178,11 +182,13 @@ class _MatrixCalculatorState extends State<MatrixCalculator> {
     } else {
       showDialog(
           context: context,
-          child: AlertDialog(
-            title: Text("Row Column Miss-Match"),
-            content: Text(
-                "Check if Cols in matrix 1 and rows in matrix 2 are equal"),
-          ));
+          builder: (context) {
+            return AlertDialog(
+              title: Text("Row Column Miss-Match"),
+              content: Text(
+                  "Check if Cols in matrix 1 and rows in matrix 2 are equal"),
+            );
+          });
     }
   }
 
@@ -202,10 +208,12 @@ class _MatrixCalculatorState extends State<MatrixCalculator> {
     } else {
       showDialog(
           context: context,
-          child: AlertDialog(
-            title: Text("Row Column Miss-Match"),
-            content: Text("Check if Cols and rows are equal"),
-          ));
+          builder: (context) {
+            return AlertDialog(
+              title: Text("Row Column Miss-Match"),
+              content: Text("Check if Cols and rows are equal"),
+            );
+          });
     }
   }
 
@@ -225,66 +233,72 @@ class _MatrixCalculatorState extends State<MatrixCalculator> {
     } else {
       showDialog(
           context: context,
-          child: AlertDialog(
-            title: Text("Row Column Miss-Match"),
-            content: Text("Check if Cols and rows are equal"),
-          ));
+          builder: (context) {
+            return AlertDialog(
+              title: Text("Row Column Miss-Match"),
+              content: Text("Check if Cols and rows are equal"),
+            );
+          });
     }
   }
 
   void dialog(x) {
     showDialog(
       context: context,
-      child: SimpleDialog(title: Text("$x"), children: [
-        SizedBox(
-          height: 20 * double.parse(rowController.text),
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: result
-                  .map((e) => Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: e
-                            .map((e) => e == "0"
-                                ? Text("0")
-                                : Text(
-                                    e,
-                                    style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold),
-                                  ))
-                            .toList(),
-                      ))
-                  .toList()),
-        ),
-      ]),
+      builder: (context) {
+        return SimpleDialog(title: Text("$x"), children: [
+          SizedBox(
+            height: 20 * double.parse(rowController.text),
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: result
+                    .map((e) => Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: e
+                              .map((e) => e == "0"
+                                  ? Text("0")
+                                  : Text(
+                                      e,
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold),
+                                    ))
+                              .toList(),
+                        ))
+                    .toList()),
+          ),
+        ]);
+      },
     );
   }
 
   void dialog1(x) {
     showDialog(
       context: context,
-      child: SimpleDialog(title: Text("$x"), children: [
-        SizedBox(
-          height: 20 * double.parse(rowController.text),
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: result1
-                  .map((e) => Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: e
-                            .map((e) => e == 0
-                                ? Text("0")
-                                : Text(
-                                    e.toString(),
-                                    style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold),
-                                  ))
-                            .toList(),
-                      ))
-                  .toList()),
-        ),
-      ]),
+      builder: (context) {
+        return SimpleDialog(title: Text("$x"), children: [
+          SizedBox(
+            height: 20 * double.parse(rowController.text),
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: result1
+                    .map((e) => Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: e
+                              .map((e) => e == 0
+                                  ? Text("0")
+                                  : Text(
+                                      e.toString(),
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold),
+                                    ))
+                              .toList(),
+                        ))
+                    .toList()),
+          ),
+        ]);
+      },
     );
   }
 

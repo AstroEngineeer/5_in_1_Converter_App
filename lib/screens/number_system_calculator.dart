@@ -55,10 +55,12 @@ class _NumberSystemCalculatorState extends State<NumberSystemCalculator> {
     } catch (Exception) {
       showDialog(
           context: context,
-          child: AlertDialog(
-            title: Text("Value Error"),
-            content: Text("Enter a proper value"),
-          ));
+          builder: (context) {
+            return AlertDialog(
+              title: Text("Value Error"),
+              content: Text("Enter a proper value"),
+            );
+          });
     }
   }
 
