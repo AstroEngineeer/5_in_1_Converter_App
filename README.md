@@ -1,6 +1,6 @@
 # Math_Electrical_Calculator
 
-A new Flutter project.
+An app that does various things such as convert different electric units, logrithmic conversions, matrix operations, Trigonometric operations.
 
 ## Getting Started
 
