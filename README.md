@@ -1,6 +1,11 @@
-# Math_Electrical_Calculator
+# 5 in 1 Convertor
 
-An app that does various things such as convert different electric units, logrithmic conversions, matrix operations, Trigonometric operations.
+An app that performs various conversions such as
+- Electrical Calculator (Amps, kW, kVA, VA, volts, watts, joules, kW, mAh, Wh)
+- Logarithmic Calculator (log, ln, Anti-log)
+- Trigonometry Calculator (Sin, Cos, Tan, Sec, Cosec, Cot, Arcsin, Arccos, Arctan)
+- Number System Calculator (Binary, Quinary, Octal, Hexadecimal – Operations: +, -, *, /)
+- Matrix Calculator (+, -, *, Power)
 
 ## Getting Started
 
