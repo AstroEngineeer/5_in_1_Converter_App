@@ -1,6 +1,6 @@
 # 5 in 1 Converter
 
-A flutter app that can performs various conversions such as
+A flutter app that can perform various conversions such as
 - Electrical Converter (Amps, kW, kVA, VA, volts, watts, joules, kW, mAh, Wh)
 - Logarithmic Converter (log, ln, Anti-log)
 - Trigonometry Convertor (Sin, Cos, Tan, Sec, Cosec, Cot, Arcsin, Arccos, Arctan)
